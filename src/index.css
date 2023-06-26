@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--color-primary: 236 1 139;
+		--color-primary-dark: 189 1 111;
+		--color-primary-light: 240 52 162;
+
+		--color-secondary: 105 48 255;
+		--color-secondary-dark: 84 38 204;
+		--color-secondary-light: 35 89 255;
+
+		--color-tertiary: 95 82 156;
+		--color-tertiary-dark: 113 82 154;
+		--color-tertiary-light: 151 149 181;
+
+		--color-background: 24 19 38;
+	}
+
+	html {
+		@apply text-zinc-50;
+	}
+
+	body {
+		@apply bg-background;
+	}
+}
