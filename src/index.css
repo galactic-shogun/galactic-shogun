@@ -17,6 +17,8 @@
 		--color-tertiary-light: 151 149 181;
 
 		--color-background: 24 19 38;
+
+		--logo-shadow: -0.15rem -0.15rem 0 rgb(var(--color-primary));
 	}
 
 	html {
