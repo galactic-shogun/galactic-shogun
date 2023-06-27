@@ -53,7 +53,7 @@ const Hero = () => {
 								<SectionTitle>
 									Master the Cosmos with Galactic Shogun
 								</SectionTitle>
-								<p className='text-sm'>
+								<p className='text-sm font-serif'>
 									Sign up now to receive exclusive updates and be the first to
 									conquer the cosmos!
 								</p>

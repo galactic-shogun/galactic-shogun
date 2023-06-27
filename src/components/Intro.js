@@ -8,7 +8,7 @@ const Intro = () => {
 		<Section>
 			<div className='flex flex-col gap-6 text-center'>
 				<SectionTitle>Intro to the Galactic Shogun</SectionTitle>
-				<p className='text-sm'>
+				<p className='text-sm font-serif text-tertiary-light'>
 					Hook / description for the video for people to get interested in
 					watching.
 				</p>
