@@ -4,7 +4,7 @@ import SectionTitle from '../elements/SectionTitle';
 
 const About = () => {
 	return (
-		<Section>
+		<Section className='bg-gradient-to-b from-gray-950 to-10%'>
 			<div className='text-center'>
 				<SectionTitle>What to expect</SectionTitle>
 			</div>

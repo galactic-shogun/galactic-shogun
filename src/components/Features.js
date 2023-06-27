@@ -5,7 +5,7 @@ import FeatureCard from './FeatureCard';
 
 const Features = () => {
 	return (
-		<Section className='bg-gray-950'>
+		<Section className='bg-gray-950 bg-gradient-to-b from-background to-10%'>
 			<div className='flex flex-col gap-9'>
 				<div className='flex flex-col gap-4 text-center'>
 					<SectionTitle>When Strategy Meets Interstellar Warfare</SectionTitle>
