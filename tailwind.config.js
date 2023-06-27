@@ -6,6 +6,7 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			sans: ['Orbitron', 'sans-serif'],
+			serif: ['Montserrat', 'serif'],
 		},
 		colors: {
 			...colors,
