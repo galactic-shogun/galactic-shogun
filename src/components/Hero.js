@@ -6,7 +6,6 @@ import Input from '../elements/Input';
 import Logo from '../elements/Logo';
 import SectionTitle from '../elements/SectionTitle';
 import SpaceWarp from './SpaceWarp';
-import Section from '../elements/Section';
 
 const Hero = () => {
 	const [show, setShow] = useState(false);
@@ -31,7 +30,7 @@ const Hero = () => {
 			>
 				<SpaceWarp />
 			</Canvas>
-			<Section className='min-h-screen flex flex-col justify-center items-center gap-16 relative z-10'>
+			<section className='py-16 px-6 min-h-screen flex flex-col justify-center items-center gap-16 relative z-10'>
 				<motion.div layout transition={{ duration: 0.25 }}>
 					<motion.div
 						animate={{ opacity: 100 }}
@@ -65,7 +64,7 @@ const Hero = () => {
 						</motion.div>
 					)}
 				</AnimatePresence>
-			</Section>
+			</section>
 		</>
 	);
 };
