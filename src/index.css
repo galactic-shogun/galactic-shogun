@@ -32,10 +32,22 @@
 
 @layer components {
 	.button {
-		background-color: theme('colors.primary.light');
+		background-color: theme('colors.primary.DEFAULT');
 		border-radius: theme('borderRadius.md');
 		padding: theme('spacing[2.5]');
 		font-weight: theme('fontWeight.medium');
+		transition: all theme('transitionDuration.150')
+			theme('transitionTimingFunction.in-out');
+	}
+
+	.button:hover {
+		background-color: theme('colors.primary.light');
+		box-shadow: theme('boxShadow.lg');
+	}
+
+	.button:active {
+		background-color: theme('colors.primary.light');
+		box-shadow: theme('boxShadow.lg');
 	}
 
 	.input {
