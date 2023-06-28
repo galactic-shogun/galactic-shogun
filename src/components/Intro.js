@@ -19,8 +19,8 @@ const Intro = () => {
 		<motion.section
 			initial={{ y: 100, opacity: 0 }}
 			whileInView={{ y: 0, opacity: 1 }}
-			viewport={{ once: true, amount: 0.2 }}
-			transition={{ duration: 0.5 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.5, opacity: { duration: 0.325 } }}
 			className='section relative overflow-x-clip'
 		>
 			<div className='flex flex-col gap-4 text-center relative z-30'>
