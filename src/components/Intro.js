@@ -1,20 +1,19 @@
 import React from 'react';
-import Button from '../elements/Button';
-import Section from '../elements/Section';
-import SectionTitle from '../elements/SectionTitle';
+import MetalIcon from '../icons/MetalIcon';
 
 const Intro = () => {
 	return (
-		<Section>
-			<div className='flex flex-col gap-6 text-center'>
-				<SectionTitle>Intro to the Galactic Shogun</SectionTitle>
+		<section className='section bg-zinc-100 relative overflow-hidden'>
+			<div className='flex flex-col gap-4 text-center z-10'>
+				<h2 className='section-title text-tertiary-dark'>
+					What is Galactic Shogun?
+				</h2>
 				<p className='text-sm font-serif text-tertiary-light'>
-					Hook / description for the video for people to get interested in
-					watching.
+					Meet the game designer and learn how to play Galactic Shogun!
 				</p>
 				<iframe
 					height='300'
-					className='rounded-md'
+					className='rounded-md z-10'
 					src='https://www.youtube.com/embed/B7HWLWf2S9w'
 					title='YouTube video player'
 					allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -25,10 +24,12 @@ const Intro = () => {
 					target='_blank'
 					rel='noreferrer'
 				>
-					<Button className='w-full'>FIND US ON KICKSTARTER</Button>
+					<button className='button w-full'>FIND US ON KICKSTARTER</button>
 				</a>
 			</div>
-		</Section>
+			<MetalIcon className='stroke-primary absolute z-0 -top-1/3 right-0 translate-x-1/2' />
+			<MetalIcon className='stroke-primary absolute z-0 -bottom-1/3 left-0 -translate-x-1/2 rotate-90' />
+		</section>
 	);
 };
 
