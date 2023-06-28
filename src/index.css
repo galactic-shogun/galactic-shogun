@@ -13,7 +13,7 @@
 		--color-secondary-light: 35 89 255;
 
 		--color-tertiary: 95 82 156;
-		--color-tertiary-dark: 113 82 154;
+		--color-tertiary-dark: 93 90 136;
 		--color-tertiary-light: 151 149 181;
 
 		--color-background: 24 19 38;
@@ -27,5 +27,32 @@
 
 	body {
 		@apply bg-background;
+	}
+}
+
+@layer components {
+	.button {
+		background-color: theme('colors.primary.light');
+		border-radius: theme('borderRadius.md');
+		padding: theme('spacing[2.5]');
+		font-weight: theme('fontWeight.medium');
+	}
+
+	.input {
+		color: theme('colors.black');
+		border-radius: theme('borderRadius.md');
+		padding: theme('spacing[2.5]');
+		text-align: center;
+	}
+
+	.section {
+		padding: theme('spacing.16') theme('spacing.6');
+	}
+
+	.section-title {
+		font-size: theme('fontSize.2xl');
+		font-weight: theme('fontWeight.bold');
+		letter-spacing: theme('letterSpacing.wide');
+		line-height: theme('lineHeight.none');
 	}
 }
