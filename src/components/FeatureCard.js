@@ -10,7 +10,6 @@ const FeatureCard = ({ icon, title, description, className }) => {
 				whileInView={{ opacity: 1, scale: 1 }}
 				transition={{
 					duration: 0.3,
-					delay: 0.2,
 					ease: [0, 0.71, 0.2, 1.01],
 					scale: {
 						type: 'spring',
@@ -19,7 +18,7 @@ const FeatureCard = ({ icon, title, description, className }) => {
 						restDelta: 0.001,
 					},
 				}}
-				viewport={{ once: true }}
+				viewport={{ once: true, amount: 'all' }}
 			>
 				<Icon name={icon} className='h-24 mx-auto mb-10 text-zinc-100' />
 			</motion.div>
