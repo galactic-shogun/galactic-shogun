@@ -27,7 +27,7 @@ const Hero = () => {
 			>
 				<SpaceWarp />
 			</Canvas>
-			<section className='section min-h-screen flex flex-col justify-center items-center gap-16 relative z-10'>
+			<section className='section min-h-screen flex flex-col justify-center items-center gap-16 relative z-0 bg-gradient-to-t from-background to-50%'>
 				<motion.div layout transition={{ duration: 0.25 }}>
 					<motion.div
 						animate={{ opacity: 100 }}

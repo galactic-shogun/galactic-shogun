@@ -1,12 +1,19 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import MetalIcon from '../icons/MetalIcon';
 import FeatureCard from './FeatureCard';
 
 const Features = () => {
 	return (
-		<section className='section relative overflow-hidden'>
+		<motion.section
+			initial={{ y: 100, opacity: 0 }}
+			whileInView={{ y: 0, opacity: 1 }}
+			viewport={{ once: true, amount: 0.2 }}
+			transition={{ duration: 0.5 }}
+			className='section relative overflow-x-clip'
+		>
 			<div className='flex flex-col gap-9 items-center'>
-				<div className='flex flex-col gap-4 text-center'>
+				<div className='flex flex-col gap-4 text-center z-30'>
 					<h2 className='section-title'>Social Deduction for Everyone</h2>
 					<p className='text-sm font-serif text-tertiary-light'>
 						Where honor, power, and strategy intersect. Are you ready to conquer
@@ -36,7 +43,7 @@ const Features = () => {
 			</div>
 			<MetalIcon className='stroke-white/50 absolute z-0 bottom-1/4 right-0 translate-x-1/3' />
 			<MetalIcon className='stroke-white/50 absolute z-0 bottom-0 left-0 -translate-x-1/2' />
-		</section>
+		</motion.section>
 	);
 };
 
