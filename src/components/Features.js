@@ -5,7 +5,7 @@ import FeatureCard from './FeatureCard';
 const Features = () => {
 	return (
 		<section className='section relative overflow-hidden'>
-			<div className='flex flex-col gap-9'>
+			<div className='flex flex-col gap-9 items-center'>
 				<div className='flex flex-col gap-4 text-center'>
 					<h2 className='section-title'>Social Deduction for Everyone</h2>
 					<p className='text-sm font-serif text-tertiary-light'>
@@ -13,21 +13,24 @@ const Features = () => {
 						the stars?
 					</p>
 				</div>
-				<div className='flex flex-col gap-10 py-10 px-6 border-2 rounded-lg bg-tertiary/[0.15]'>
+				<div className='flex flex-col md:flex-row justify-center max-w-max gap-10 py-10 px-6 border-2 rounded-lg bg-tertiary/[0.15]'>
 					<FeatureCard
 						icon='samurai'
 						title='Fast & furious.'
 						description='Games take 15-45 minutes and set up is easy. The game state changes drastically every turn when a card is played.'
+						className='flex-1 md:max-w-xs'
 					/>
 					<FeatureCard
 						icon='ninja'
 						title='Can’t lie? All good.'
 						description='No one “dies” and those who can’t lie are given multiple opportunities to stay in the game.'
+						className='flex-1 md:max-w-xs'
 					/>
 					<FeatureCard
 						icon='sakura'
 						title='It’s not over til it’s over.'
 						description='All Play Cards have the ability to help you win the game, but you will always need plans A-Z as the other players disrupt your gameplay.'
+						className='flex-1 md:max-w-xs'
 					/>
 				</div>
 			</div>

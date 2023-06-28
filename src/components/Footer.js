@@ -19,25 +19,27 @@ const Footer = () => {
 					<div className='flex flex-col gap-2 mt-8'>
 						<input placeholder='First Name' className='input' />
 						<input placeholder='Email Address' className='input' />
-						<button className='button bg-secondary'>SUBSCRIBE</button>
+						<button className='button bg-secondary transform hover:scale-105 hover:bg-secondary-light active:bg-secondary-light'>
+							SUBSCRIBE
+						</button>
 					</div>
 					<div className='mt-16'>
 						<div className='flex justify-center gap-2'>
 							<a
 								href='https://youtu.be/B7HWLWf2S9w'
-								className='p-3 bg-zinc-100 rounded-lg'
+								className='p-3 bg-zinc-100 rounded-lg transition transform hover:shadow-lg hover:scale-105'
 							>
 								<Icon name='facebook' className='w-5 h-5 text-primary' />
 							</a>
 							<a
 								href='https://youtu.be/B7HWLWf2S9w'
-								className='p-3 bg-zinc-100 rounded-lg'
+								className='p-3 bg-zinc-100 rounded-lg transition transform hover:shadow-lg hover:scale-105'
 							>
 								<Icon name='instagram' className='w-5 h-5 text-primary' />
 							</a>
 							<a
 								href='https://youtu.be/B7HWLWf2S9w'
-								className='p-3 bg-zinc-100 rounded-lg'
+								className='p-3 bg-zinc-100 rounded-lg transition transform hover:shadow-lg hover:scale-105'
 							>
 								<Icon name='tiktok' className='w-5 h-5 text-primary' />
 							</a>
