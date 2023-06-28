@@ -1,5 +1,18 @@
 import React from 'react';
 import MetalIcon from '../icons/MetalIcon';
+import { motion } from 'framer-motion';
+
+const metalAnimation = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+	},
+	transition: {
+		duration: 0.5,
+	},
+};
 
 const Intro = () => {
 	return (
@@ -23,12 +36,25 @@ const Intro = () => {
 					href='https://www.kickstarter.com/projects/peterluo/2043897814?ref=9jufr2&token=f66ffddc'
 					target='_blank'
 					rel='noreferrer'
+					className='button transform hover:scale-105 w-full z-10'
 				>
-					<button className='button w-full'>FIND US ON KICKSTARTER</button>
+					FIND US ON KICKSTARTER
 				</a>
 			</div>
-			<MetalIcon className='stroke-primary absolute z-0 -top-1/3 right-0 translate-x-1/2' />
-			<MetalIcon className='stroke-primary absolute z-0 -bottom-1/3 left-0 -translate-x-1/2 rotate-90' />
+			<motion.div
+				initial={metalAnimation.initial}
+				whileInView={metalAnimation.animate}
+				transition={metalAnimation.transition}
+			>
+				<MetalIcon className='stroke-primary absolute z-0 -top-1/3 right-0 translate-x-1/2' />
+			</motion.div>
+			<motion.div
+				initial={metalAnimation.initial}
+				whileInView={metalAnimation.animate}
+				transition={metalAnimation.transition}
+			>
+				<MetalIcon className='stroke-primary absolute z-0 -bottom-1/3 left-0 -translate-x-1/2 rotate-90' />
+			</motion.div>
 		</section>
 	);
 };
