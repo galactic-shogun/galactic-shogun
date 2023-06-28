@@ -3,7 +3,7 @@ import Icon from '../icons/Icon';
 
 const Footer = () => {
 	return (
-		<footer className='bg-primary bg-gradient-to-b from-gray-950 to-50% '>
+		<footer className='bg-primary-dark bg-gradient-to-b from-gray-950 to-50% '>
 			<div
 				style={{ backgroundImage: `url(${require('../images/Shogun.png')})` }}
 				className='pb-16 pt-20 px-6 bg-bottom bg-no-repeat'
