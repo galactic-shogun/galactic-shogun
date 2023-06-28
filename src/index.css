@@ -58,7 +58,7 @@
 	}
 
 	.section {
-		padding: theme('spacing.16') theme('spacing.6');
+		padding: theme('spacing.14') theme('spacing.6');
 	}
 
 	.section-title {
