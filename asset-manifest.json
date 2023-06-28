@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/galactic-shogun/static/css/main.b59d407d.css",
-    "main.js": "/galactic-shogun/static/js/main.2a46c995.js",
+    "main.css": "/galactic-shogun/static/css/main.cc9db259.css",
+    "main.js": "/galactic-shogun/static/js/main.d3a5d9c9.js",
     "static/js/787.e8cac526.chunk.js": "/galactic-shogun/static/js/787.e8cac526.chunk.js",
     "static/media/Box.png": "/galactic-shogun/static/media/Box.44467ec88e9bb878ef00.png",
     "static/media/Shogun.png": "/galactic-shogun/static/media/Shogun.f406d9dbbdb8f1539447.png",
     "static/media/Dango.png": "/galactic-shogun/static/media/Dango.e6a6156226ce37415262.png",
     "index.html": "/galactic-shogun/index.html",
-    "main.b59d407d.css.map": "/galactic-shogun/static/css/main.b59d407d.css.map",
-    "main.2a46c995.js.map": "/galactic-shogun/static/js/main.2a46c995.js.map",
+    "main.cc9db259.css.map": "/galactic-shogun/static/css/main.cc9db259.css.map",
+    "main.d3a5d9c9.js.map": "/galactic-shogun/static/js/main.d3a5d9c9.js.map",
     "787.e8cac526.chunk.js.map": "/galactic-shogun/static/js/787.e8cac526.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b59d407d.css",
-    "static/js/main.2a46c995.js"
+    "static/css/main.cc9db259.css",
+    "static/js/main.d3a5d9c9.js"
   ]
 }
