@@ -1,10 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import Button from '../elements/Button';
-import Input from '../elements/Input';
-import Logo from '../elements/Logo';
-import SectionTitle from '../elements/SectionTitle';
+import Logo from '../icons/Logo';
 import SpaceWarp from './SpaceWarp';
 
 const Hero = () => {
@@ -30,14 +27,14 @@ const Hero = () => {
 			>
 				<SpaceWarp />
 			</Canvas>
-			<section className='py-16 px-6 min-h-screen flex flex-col justify-center items-center gap-16 relative z-10 bg-gradient-to-t from-background to-50%'>
+			<section className='section min-h-screen flex flex-col justify-center items-center gap-16 relative z-10'>
 				<motion.div layout transition={{ duration: 0.25 }}>
 					<motion.div
 						animate={{ opacity: 100 }}
 						initial={{ opacity: 0 }}
 						transition={{ duration: 0.5, delay: 1.25 }}
 					>
-						<Logo />
+						<Logo className='w-48' />
 					</motion.div>
 				</motion.div>
 				<AnimatePresence>
@@ -46,20 +43,24 @@ const Hero = () => {
 							layout
 							animate={{ opacity: 100, y: 0 }}
 							initial={{ opacity: 0, y: 100 }}
-							className='flex flex-col gap-10 max-w-[300px]'
+							className='flex flex-col gap-5 max-w-[300px]'
 						>
 							<div className='flex flex-col gap-4 text-center'>
-								<SectionTitle>
+								<h3 className='font-serif text-sm font-semibold'>
+									KICKSTARTER LAUNCH FALL 2023
+								</h3>
+								<h2 className='section-title text-primary'>
 									Master the Cosmos with Galactic Shogun
-								</SectionTitle>
+								</h2>
 								<p className='text-sm font-serif'>
-									Sign up now to receive exclusive updates and be the first to
-									conquer the cosmos!
+									A new fast-paced and dynamic social deduction board game for
+									4-8 players!
 								</p>
 							</div>
 							<div className='flex flex-col gap-2'>
-								<Input placeholder='Enter your email' />
-								<Button>SUBSCRIBE</Button>
+								<input className='input' placeholder='First Name' />
+								<input className='input' placeholder='Email Address' />
+								<button className='button'>GET NOTIFIED</button>
 							</div>
 						</motion.div>
 					)}
