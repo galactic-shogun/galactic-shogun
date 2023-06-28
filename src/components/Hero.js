@@ -34,7 +34,7 @@ const Hero = () => {
 						initial={{ opacity: 0 }}
 						transition={{ duration: 0.5, delay: 1.25 }}
 					>
-						<Logo className='w-48' />
+						<Logo className='w-48 md:w-96' />
 					</motion.div>
 				</motion.div>
 				<AnimatePresence>
@@ -43,24 +43,27 @@ const Hero = () => {
 							layout
 							animate={{ opacity: 100, y: 0 }}
 							initial={{ opacity: 0, y: 100 }}
-							className='flex flex-col gap-5 max-w-[300px]'
+							className='flex flex-col gap-5 items-center'
 						>
-							<div className='flex flex-col gap-4 text-center'>
+							<div className='flex flex-col gap-4 items-center text-center'>
 								<h3 className='font-serif text-sm font-semibold'>
 									KICKSTARTER LAUNCH FALL 2023
 								</h3>
-								<h2 className='section-title text-primary'>
-									Master the Cosmos with Galactic Shogun
+								<h2 className='section-title md:text-4xl text-primary'>
+									Master the Cosmos with
+									<div>Galactic Shogun</div>
 								</h2>
 								<p className='text-sm font-serif'>
 									A new fast-paced and dynamic social deduction board game for
 									4-8 players!
 								</p>
 							</div>
-							<div className='flex flex-col gap-2'>
+							<div className='flex flex-col gap-2 md:max-w-xs'>
 								<input className='input' placeholder='First Name' />
 								<input className='input' placeholder='Email Address' />
-								<button className='button'>GET NOTIFIED</button>
+								<button className='button transform hover:scale-105'>
+									GET NOTIFIED
+								</button>
 							</div>
 						</motion.div>
 					)}
