@@ -51,8 +51,8 @@ const Intro = () => {
 				transition={metalAnimation.transition}
 				className='z-20'
 			>
-				<MetalIcon className='stroke-primary absolute z-20 -top-1/3 right-0 translate-x-1/2' />
-				<MetalIcon className='stroke-primary absolute z-20 -bottom-1/3 left-0 -translate-x-1/2 rotate-90' />
+				<MetalIcon className='h-auto w-96 stroke-primary absolute z-20 -top-1/3 right-0 translate-x-1/2' />
+				<MetalIcon className='h-auto w-96 stroke-primary absolute z-20 -bottom-1/3 left-0 -translate-x-1/2 rotate-90' />
 			</motion.div>
 		</motion.section>
 	);

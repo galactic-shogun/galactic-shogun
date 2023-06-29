@@ -41,8 +41,8 @@ const Features = () => {
 					/>
 				</div>
 			</div>
-			<MetalIcon className='stroke-white/50 absolute z-0 bottom-1/4 right-0 translate-x-1/3' />
-			<MetalIcon className='stroke-white/50 absolute z-0 bottom-0 left-0 -translate-x-1/2' />
+			<MetalIcon className='h-auto w-96 stroke-white/50 absolute z-0 bottom-1/4 right-0 translate-x-1/3' />
+			<MetalIcon className='h-auto w-96 stroke-white/50 absolute z-0 bottom-0 left-0 -translate-x-1/2' />
 		</motion.section>
 	);
 };
