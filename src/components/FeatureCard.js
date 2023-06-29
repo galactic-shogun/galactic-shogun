@@ -4,7 +4,13 @@ import { motion } from 'framer-motion';
 
 const FeatureCard = ({ icon, title, description, className }) => {
 	return (
-		<div className={`text-center ${className}`}>
+		<motion.div
+			initial={{ y: 100, opacity: 0 }}
+			whileInView={{ y: 0, opacity: 1 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.5 }}
+			className={`text-center ${className}`}
+		>
 			<motion.div
 				initial={{ opacity: 0, scale: 0.5 }}
 				whileInView={{ opacity: 1, scale: 1 }}
@@ -28,7 +34,7 @@ const FeatureCard = ({ icon, title, description, className }) => {
 				</h4>
 				<p className='font-serif text-zinc-100'>{description}</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
