@@ -6,17 +6,17 @@ import About from './components/About';
 import Footer from './components/Footer';
 
 const App = () => {
-	return (
-		<>
-			<main>
-				<Hero />
-				<Intro />
-				<Features />
-				<About />
-				<Footer />
-			</main>
-		</>
-	);
+  return (
+    <>
+      <main>
+        <Hero />
+        <Intro />
+        <Features />
+        <About />
+        <Footer />
+      </main>
+    </>
+  );
 };
 
 export default App;

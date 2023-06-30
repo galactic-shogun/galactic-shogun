@@ -3,68 +3,68 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
-		--color-primary: 236 1 139;
-		--color-primary-dark: 189 1 111;
-		--color-primary-light: 240 52 162;
+  :root {
+    --color-primary: 236 1 139;
+    --color-primary-dark: 189 1 111;
+    --color-primary-light: 240 52 162;
 
-		--color-secondary: 105 48 255;
-		--color-secondary-dark: 84 38 204;
-		--color-secondary-light: 35 89 255;
+    --color-secondary: 105 48 255;
+    --color-secondary-dark: 84 38 204;
+    --color-secondary-light: 35 89 255;
 
-		--color-tertiary: 95 82 156;
-		--color-tertiary-dark: 93 90 136;
-		--color-tertiary-light: 151 149 181;
+    --color-tertiary: 95 82 156;
+    --color-tertiary-dark: 93 90 136;
+    --color-tertiary-light: 151 149 181;
 
-		--color-background: 24 19 38;
+    --color-background: 24 19 38;
 
-		--logo-shadow: -0.15rem -0.15rem 0 rgb(var(--color-primary));
-	}
+    --logo-shadow: -0.15rem -0.15rem 0 rgb(var(--color-primary));
+  }
 
-	html {
-		@apply text-zinc-50;
-	}
+  html {
+    @apply text-zinc-50;
+  }
 
-	body {
-		@apply bg-background;
-	}
+  body {
+    @apply bg-background;
+  }
 }
 
 @layer components {
-	.button {
-		background-color: theme('colors.primary.DEFAULT');
-		border-radius: theme('borderRadius.md');
-		padding: theme('spacing[2.5]');
-		font-weight: theme('fontWeight.medium');
-		transition: all theme('transitionDuration.150')
-			theme('transitionTimingFunction.in-out');
-	}
+  .button {
+    background-color: theme('colors.primary.DEFAULT');
+    border-radius: theme('borderRadius.md');
+    padding: theme('spacing[2.5]');
+    font-weight: theme('fontWeight.medium');
+    transition: all theme('transitionDuration.150')
+      theme('transitionTimingFunction.in-out');
+  }
 
-	.button:hover {
-		background-color: theme('colors.primary.light');
-		box-shadow: theme('boxShadow.lg');
-	}
+  .button:hover {
+    background-color: theme('colors.primary.light');
+    box-shadow: theme('boxShadow.lg');
+  }
 
-	.button:active {
-		background-color: theme('colors.primary.light');
-		box-shadow: theme('boxShadow.lg');
-	}
+  .button:active {
+    background-color: theme('colors.primary.light');
+    box-shadow: theme('boxShadow.lg');
+  }
 
-	.input {
-		color: theme('colors.black');
-		border-radius: theme('borderRadius.md');
-		padding: theme('spacing[2.5]');
-		text-align: center;
-	}
+  .input {
+    color: theme('colors.black');
+    border-radius: theme('borderRadius.md');
+    padding: theme('spacing[2.5]');
+    text-align: center;
+  }
 
-	.section {
-		padding: theme('spacing.14') theme('spacing.6');
-	}
+  .section {
+    padding: theme('spacing.14') theme('spacing.6');
+  }
 
-	.section-title {
-		font-size: theme('fontSize.2xl');
-		font-weight: theme('fontWeight.bold');
-		letter-spacing: theme('letterSpacing.wide');
-		line-height: theme('lineHeight.none');
-	}
+  .section-title {
+    font-size: theme('fontSize.2xl');
+    font-weight: theme('fontWeight.bold');
+    letter-spacing: theme('letterSpacing.wide');
+    line-height: theme('lineHeight.none');
+  }
 }
