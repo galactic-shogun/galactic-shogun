@@ -21,9 +21,9 @@ const Intro = () => {
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, opacity: { duration: 0.325 } }}
-      className='section relative overflow-x-clip'
+      className='section relative overflow-x-clip md:pt-3'
     >
-      <div className='relative z-30 flex flex-col gap-4 text-center'>
+      <div className='relative z-30 mx-auto flex max-w-2xl flex-col gap-4 text-center'>
         <h2 className='section-title '>What is Galactic Shogun?</h2>
         <p className='font-serif text-sm text-tertiary-light'>
           Meet the game designer and learn how to play Galactic Shogun!
