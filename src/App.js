@@ -1,9 +1,10 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Intro from './components/Intro';
-import Features from './components/Features';
 import About from './components/About';
+import Features from './components/Features';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
+import ImageSection from './components/ImageSection';
+import Intro from './components/Intro';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <main>
         <Hero />
         <Intro />
+        <ImageSection />
         <Features />
         <About />
         <Footer />
