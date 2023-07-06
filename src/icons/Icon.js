@@ -1,13 +1,14 @@
 import React from 'react';
-import NinjaIcon from './NinjaIcon';
-import SpaceIcon from './SpaceIcon';
-import SamuraiIcon from './SamuraiIcon';
-import SakuraIcon from './SakuraIcon';
-import InstagramIcon from './InstagramIcon';
-import FacebookIcon from './FacebookIcon';
-import TikTokIcon from './TikTokIcon';
-import ArrowRight from './ArrowRight';
+import ArrowDown from './ArrowDown';
 import ArrowLeft from './ArrowLeft';
+import ArrowRight from './ArrowRight';
+import FacebookIcon from './FacebookIcon';
+import InstagramIcon from './InstagramIcon';
+import NinjaIcon from './NinjaIcon';
+import SakuraIcon from './SakuraIcon';
+import SamuraiIcon from './SamuraiIcon';
+import SpaceIcon from './SpaceIcon';
+import TikTokIcon from './TikTokIcon';
 
 const Icon = ({ name, ...props }) => {
   switch (name) {
@@ -29,6 +30,8 @@ const Icon = ({ name, ...props }) => {
       return <ArrowRight {...props} />;
     case 'arrow-left':
       return <ArrowLeft {...props} />;
+    case 'arrow-down':
+      return <ArrowDown {...props} />;
     default:
       return <SpaceIcon {...props} />;
   }
