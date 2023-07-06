@@ -10,7 +10,7 @@ const Features = () => {
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className='section relative overflow-x-clip py-36'
+      className='section relative overflow-x-clip'
     >
       <div className='relative mx-auto max-w-screen-2xl'>
         <div className='flex flex-col items-center gap-9 md:gap-16'>

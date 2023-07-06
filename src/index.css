@@ -70,7 +70,8 @@
 
   @screen md {
     .section {
-      padding: theme('spacing.20') theme('spacing.6');
+      padding: theme('spacing.20') theme('spacing.6') theme('spacing.36')
+        theme('spacing.6');
     }
 
     .section-title {
