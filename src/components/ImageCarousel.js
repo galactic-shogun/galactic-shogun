@@ -75,7 +75,7 @@ const ImageCarousel = ({ images = [], interval }) => {
                 layout
                 src={image}
                 alt='carousel'
-                className='h-96 max-w-xs flex-1 rounded-lg object-cover'
+                className='object-fit h-96 max-w-xs flex-1 rounded-lg'
               />
             ))}
           </AnimatePresence>
