@@ -10,7 +10,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShow(true);
-    }, 2500);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -26,13 +26,14 @@ const Hero = () => {
         }}
       >
         {process.env.NODE_ENV === 'production' && <SpaceWarp />}
+        <SpaceWarp />
       </Canvas>
       <section className='section relative z-0 flex min-h-screen flex-col items-center justify-center gap-20 bg-gradient-to-t from-background to-50%'>
         <motion.div layout transition={{ duration: 0.25 }}>
           <motion.div
             animate={{ opacity: 100 }}
             initial={{ opacity: 0 }}
-            transition={{ duration: 0.5, delay: 1.25 }}
+            transition={{ duration: 0.5, delay: 1 }}
           >
             <Logo className='w-64 md:w-96' />
           </motion.div>

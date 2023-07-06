@@ -11,7 +11,7 @@ import * as THREE from 'three';
 const COUNT = 300;
 const XY_BOUNDS = 40;
 const Z_BOUNDS = 20;
-const MAX_SPEED_FACTOR = 2;
+const MAX_SPEED_FACTOR = 1.25;
 const MAX_SCALE_FACTOR = 50;
 
 const CHROMATIC_ABBERATION_OFFSET = 0.007;
@@ -40,8 +40,13 @@ const SpaceWarp = () => {
   const tempColor = new THREE.Color();
   useFrame((state, delta) => {
     if (!meshRef.current) return;
+    const factor = 1.5;
     const velocity =
-      1 / Math.pow(state.clock.elapsedTime + 1, state.clock.elapsedTime + 1);
+      1 /
+      Math.pow(
+        state.clock.elapsedTime + factor,
+        state.clock.elapsedTime + factor
+      );
     for (let i = 0; i < COUNT; i++) {
       meshRef.current.getMatrixAt(i, temp);
       tempObject.scale.set(1, 1, Math.max(1, velocity * MAX_SCALE_FACTOR));
