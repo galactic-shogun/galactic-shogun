@@ -67,4 +67,10 @@
     letter-spacing: theme('letterSpacing.wide');
     line-height: theme('lineHeight.none');
   }
+
+  @screen md {
+    .section-title {
+      font-size: theme('fontSize.4xl');
+    }
+  }
 }
