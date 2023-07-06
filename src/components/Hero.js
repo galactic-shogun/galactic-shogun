@@ -27,14 +27,14 @@ const Hero = () => {
       >
         {process.env.NODE_ENV === 'production' && <SpaceWarp />}
       </Canvas>
-      <section className='section relative z-0 flex min-h-screen flex-col items-center justify-center gap-16 bg-gradient-to-t from-background to-50%'>
+      <section className='section relative z-0 flex min-h-screen flex-col items-center justify-center gap-20 bg-gradient-to-t from-background to-50%'>
         <motion.div layout transition={{ duration: 0.25 }}>
           <motion.div
             animate={{ opacity: 100 }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 1.25 }}
           >
-            <Logo className='w-48 md:w-96' />
+            <Logo className='w-64 md:w-96' />
           </motion.div>
         </motion.div>
         <AnimatePresence>
@@ -43,7 +43,7 @@ const Hero = () => {
               layout
               animate={{ opacity: 100, y: 0 }}
               initial={{ opacity: 0, y: 100 }}
-              className='flex flex-col items-center gap-5'
+              className='mb-auto flex flex-col items-center gap-5'
             >
               <div className='flex flex-col items-center gap-4 text-center'>
                 <h3 className='font-serif text-sm font-semibold'>

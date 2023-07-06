@@ -4,7 +4,7 @@ import Dango from '../images/Dango.png';
 
 const About = () => {
   return (
-    <section className='section bg-gray-950 bg-gradient-to-b from-background to-25%'>
+    <section className='section bg-gray-950 bg-gradient-to-b from-background to-25% pb-8'>
       <div className='text-center'>
         <h2 className='section-title'>Game Contents</h2>
       </div>
