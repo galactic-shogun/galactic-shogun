@@ -53,16 +53,15 @@ const Hero = () => {
                   initial={{ opacity: 0, y: 100 }}
                   className='mb-auto flex w-full items-center justify-between'
                 >
-                  <div className='flex flex-col items-center gap-5 md:items-start'>
+                  <div className='flex max-w-xl flex-col items-center gap-5 md:items-start'>
                     <div className='flex flex-col items-center gap-4 text-center md:items-start md:text-left'>
-                      <h3 className='font-serif text-sm font-semibold'>
+                      <h3 className='font-serif text-sm font-semibold md:text-xl'>
                         KICKSTARTER LAUNCH FALL 2023
                       </h3>
                       <h2 className='section-title text-primary md:text-5xl'>
-                        Master the Cosmos with
-                        <div>Galactic Shogun</div>
+                        Master the Cosmos with Galactic Shogun
                       </h2>
-                      <p className='font-serif text-sm'>
+                      <p className='font-serif text-sm md:text-xl'>
                         A new fast-paced and dynamic social deduction board game
                         for 4-8 players!
                       </p>
