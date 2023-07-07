@@ -28,7 +28,7 @@ const ImageSection = () => {
       transition={{ duration: 0.5, opacity: { duration: 0.325 } }}
       className='relative z-30 mx-auto max-w-screen-2xl overflow-x-hidden py-10'
     >
-      <ImageCarousel images={images} interval={isInView ? 3000 : null} />
+      <ImageCarousel images={images} interval={isInView ? 2500 : null} />
     </motion.section>
   );
 };
