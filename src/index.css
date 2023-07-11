@@ -69,11 +69,6 @@
   }
 
   .grid-parent {
-    position: absolute;
-    top: -20%;
-    right: 0;
-    height: 100%;
-    width: 50%;
     perspective: 700px;
     perspective-origin: center top;
   }
