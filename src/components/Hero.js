@@ -12,7 +12,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShow(true);
-    }, 2000);
+    }, 1500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -32,14 +32,17 @@ const Hero = () => {
       <section className='section relative z-0 flex h-screen bg-gradient-to-t from-background to-50% '>
         <div
           className={`mx-auto flex h-full w-full max-w-screen-xl flex-col items-center justify-center gap-20 ${
-            show && 'md:items-start'
+            show && 'md:items-start md:justify-between'
           }`}
         >
           <motion.div layout transition={{ duration: 0.25 }}>
             <motion.div
               animate={{ opacity: 100 }}
               initial={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 1 }}
+              transition={{
+                duration: 0.25,
+                delay: 0.5,
+              }}
             >
               <Logo className={`w-64 ${show ? 'md:w-48' : 'md:w-96'}`} />
             </motion.div>
@@ -77,7 +80,7 @@ const Hero = () => {
                   <img
                     src={BoxCard}
                     alt='box+card'
-                    className='hidden h-auto w-[500px] object-contain md:block'
+                    className='hidden h-auto max-w-xl flex-1 object-contain md:block'
                   />
                 </motion.div>
                 <motion.div
