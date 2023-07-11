@@ -68,6 +68,35 @@
     line-height: theme('lineHeight.none');
   }
 
+  .grid-parent {
+    position: absolute;
+    top: -20%;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    perspective: 700px;
+    perspective-origin: center top;
+  }
+
+  .grid-pattern {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg);
+    background-size: 50px 50px;
+
+    background-image: linear-gradient(
+        to right,
+        rgb(var(--color-tertiary-light)) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        rgb(var(--color-tertiary-light)) 1px,
+        transparent 1px
+      );
+  }
+
   @screen md {
     .section {
       padding: theme('spacing.20') theme('spacing.6') theme('spacing.36')
