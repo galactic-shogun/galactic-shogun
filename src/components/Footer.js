@@ -1,13 +1,19 @@
 import React from 'react';
+import { renderToString } from 'react-dom/server';
 import Icon from '../icons/Icon';
+import ShogunIcon from '../icons/ShogunIcon';
 import Dango from '../images/Dango.png';
 
 const Footer = () => {
   return (
-    <footer className='bg-primary-dark md:px-40'>
+    <footer className='bg-primary-dark bg-gradient-to-b from-gray-950 to-50% md:px-40'>
       <div
-        style={{ backgroundImage: `url(${require('../images/Shogun.png')})` }}
-        className='mx-auto max-w-screen-2xl bg-bottom bg-no-repeat px-6 pb-16 pt-20 md:bg-right-bottom'
+        style={{
+          backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
+            renderToString(<ShogunIcon />)
+          )}")`,
+        }}
+        className='mx-auto max-w-screen-2xl bg-left-top bg-no-repeat px-6 pb-16 pt-20 md:bg-contain md:bg-right-bottom'
       >
         <div className='max-w-lg'>
           <div className='flex flex-col gap-6 text-center md:text-left'>
