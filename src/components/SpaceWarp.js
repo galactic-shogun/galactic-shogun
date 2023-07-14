@@ -10,9 +10,9 @@ import * as THREE from 'three';
 
 const COUNT = 300;
 const XY_BOUNDS = 40;
-const Z_BOUNDS = 20;
-const MAX_SPEED_FACTOR = 5;
-const MAX_SCALE_FACTOR = 100;
+const Z_BOUNDS = 25;
+const MAX_SPEED_FACTOR = 10;
+const MAX_SCALE_FACTOR = 150;
 
 const CHROMATIC_ABBERATION_OFFSET = 0.007;
 
