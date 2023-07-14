@@ -20,8 +20,8 @@ const App = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
-            opacity: isInView && scrollDir === 'down' ? 1 : 0,
-            y: isInView && scrollDir === 'down' ? 0 : -150,
+            opacity: isInView && scrollDir === 'up' ? 1 : 0,
+            y: isInView && scrollDir === 'up' ? 0 : -150,
           }}
           transition={{ duration: 0.4 }}
           className='fixed left-0 right-0 top-0 z-50'
