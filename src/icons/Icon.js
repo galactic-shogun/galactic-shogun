@@ -10,9 +10,12 @@ import SamuraiIcon from './SamuraiIcon';
 import SpaceIcon from './SpaceIcon';
 import TikTokIcon from './TikTokIcon';
 import ShogunIcon from './ShogunIcon';
+import Logo from './Logo';
 
 const Icon = ({ name, ...props }) => {
   switch (name) {
+    case 'logo':
+      return <Logo {...props} />;
     case 'shogun':
       return <ShogunIcon {...props} />;
     case 'ninja':
