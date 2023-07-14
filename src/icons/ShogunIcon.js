@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ShogunIcon = ({ className, ...props }) => {
+const ShogunIcon = (props) => {
   return (
     <svg
       width='604'
@@ -8,7 +8,6 @@ const ShogunIcon = ({ className, ...props }) => {
       viewBox='0 0 604 737'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
       {...props}
     >
       <g opacity='0.25'>
