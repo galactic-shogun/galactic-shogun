@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/galactic-shogun/static/css/main.1e8f52fb.css",
-    "main.js": "/galactic-shogun/static/js/main.cc66125f.js",
+    "main.js": "/galactic-shogun/static/js/main.c471dc99.js",
     "static/js/787.e8cac526.chunk.js": "/galactic-shogun/static/js/787.e8cac526.chunk.js",
     "static/media/Card Game 04 - Apr 07_Galactic Shogun.png": "/galactic-shogun/static/media/Card Game 04 - Apr 07_Galactic Shogun.42cc7ad5fd3f6450a1f2.png",
     "static/media/Card Game 04 - Apr 07_Ninja.png": "/galactic-shogun/static/media/Card Game 04 - Apr 07_Ninja.2f537684e688e828db37.png",
@@ -13,11 +13,11 @@
     "static/media/Dango.png": "/galactic-shogun/static/media/Dango.e6a6156226ce37415262.png",
     "index.html": "/galactic-shogun/index.html",
     "main.1e8f52fb.css.map": "/galactic-shogun/static/css/main.1e8f52fb.css.map",
-    "main.cc66125f.js.map": "/galactic-shogun/static/js/main.cc66125f.js.map",
+    "main.c471dc99.js.map": "/galactic-shogun/static/js/main.c471dc99.js.map",
     "787.e8cac526.chunk.js.map": "/galactic-shogun/static/js/787.e8cac526.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e8f52fb.css",
-    "static/js/main.cc66125f.js"
+    "static/js/main.c471dc99.js"
   ]
 }
