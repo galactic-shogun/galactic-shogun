@@ -42,7 +42,7 @@ const Intro = () => {
             href='https://www.kickstarter.com/projects/peterluo/2043897814?ref=9jufr2&token=f66ffddc'
             target='_blank'
             rel='noreferrer'
-            className='button z-30 w-full transform hover:scale-105 md:max-w-sm'
+            className='button z-30 w-full transform hover:scale-105 md:mb-6 md:max-w-sm'
           >
             FIND US ON KICKSTARTER
           </a>
