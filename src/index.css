@@ -92,6 +92,16 @@
       );
   }
 
+  .grid-pattern-draw {
+    animation: grid-pattern-draw-animate 5s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  @keyframes grid-pattern-draw-animate {
+    0% {
+      background-size: 150px 150px;
+    }
+  }
+
   @screen md {
     .section {
       padding: theme('spacing.20') theme('spacing.6') theme('spacing.36')
