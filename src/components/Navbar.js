@@ -17,6 +17,13 @@ const Navbar = ({ className = '' }) => {
     setScrolledToTop(scrollPosition < 70);
   }, [scrollPosition]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const showNavbar = !scrolledToTop && scrollDir === 'up';
 
   return (
@@ -51,7 +58,10 @@ const Navbar = ({ className = '' }) => {
           </a>
         </div>
         <Icon name='logo' className='h-6 w-auto md:h-8' />
-        <button className='button transform p-2 text-xs hover:scale-105'>
+        <button
+          onClick={scrollToTop}
+          className='button transform p-2 text-xs hover:scale-105'
+        >
           GET NOTIFIED
         </button>
       </div>
