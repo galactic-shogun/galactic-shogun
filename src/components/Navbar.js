@@ -1,10 +1,34 @@
-import React from 'react';
+import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
 import Icon from '../icons/Icon';
 import { LINKS } from '../utils/constants';
+import useScrollDirection from '../hooks/useScrollDirection';
+import useScrollPosition from '../hooks/useScrollPosition';
 
 const Navbar = ({ className = '' }) => {
+  const scrollDir = useScrollDirection({
+    initialDirection: 'up',
+    thresholdPixels: 25,
+  });
+  const scrollPosition = useScrollPosition();
+  const [scrolledToTop, setScrolledToTop] = useState(true);
+
+  useEffect(() => {
+    setScrolledToTop(scrollPosition < 70);
+  }, [scrollPosition]);
+
+  const showNavbar = !scrolledToTop && scrollDir === 'up';
+
   return (
-    <nav className={`bg-background ${className}`}>
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: showNavbar ? 1 : 0,
+        y: showNavbar ? 0 : -150,
+      }}
+      transition={{ duration: 0.4 }}
+      className={`fixed left-0 right-0 top-0 z-50 bg-background ${className}`}
+    >
       <div className='mx-auto flex max-w-screen-xl items-center justify-between px-6 py-4'>
         <div className='hidden justify-center gap-2 md:flex'>
           <a
@@ -31,7 +55,7 @@ const Navbar = ({ className = '' }) => {
           GET NOTIFIED
         </button>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
