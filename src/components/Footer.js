@@ -3,6 +3,7 @@ import { renderToString } from 'react-dom/server';
 import Icon from '../icons/Icon';
 import ShogunIcon from '../icons/ShogunIcon';
 import Dango from '../images/Dango.png';
+import { LINKS } from '../utils/constants';
 
 const Footer = () => {
   return (
@@ -36,19 +37,19 @@ const Footer = () => {
             </div>
             <div className='flex justify-center gap-2'>
               <a
-                href='https://youtu.be/B7HWLWf2S9w'
+                href={LINKS.FACEBOOK}
                 className='transform rounded-lg bg-zinc-100 p-3 transition hover:scale-105 hover:shadow-lg'
               >
                 <Icon name='facebook' className='h-5 w-5 text-primary' />
               </a>
               <a
-                href='https://youtu.be/B7HWLWf2S9w'
+                href={LINKS.INSTAGRAM}
                 className='transform rounded-lg bg-zinc-100 p-3 transition hover:scale-105 hover:shadow-lg'
               >
                 <Icon name='instagram' className='h-5 w-5 text-primary' />
               </a>
               <a
-                href='https://youtu.be/B7HWLWf2S9w'
+                href={LINKS.TIKTOK}
                 className='transform rounded-lg bg-zinc-100 p-3 transition hover:scale-105 hover:shadow-lg'
               >
                 <Icon name='tiktok' className='h-5 w-5 text-primary' />

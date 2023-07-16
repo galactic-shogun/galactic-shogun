@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from '../icons/Icon';
+import { LINKS } from '../utils/constants';
 
 const Navbar = ({ className = '' }) => {
   return (
@@ -7,19 +8,19 @@ const Navbar = ({ className = '' }) => {
       <div className='mx-auto flex max-w-screen-xl items-center justify-between px-6 py-4'>
         <div className='hidden justify-center gap-2 md:flex'>
           <a
-            href='https://youtu.be/B7HWLWf2S9w'
+            href={LINKS.FACEBOOK}
             className='transform rounded-lg bg-zinc-100 p-2 transition hover:scale-105 hover:shadow-lg'
           >
             <Icon name='facebook' className='h-4 w-4 text-background' />
           </a>
           <a
-            href='https://youtu.be/B7HWLWf2S9w'
+            href={LINKS.INSTAGRAM}
             className='transform rounded-lg bg-zinc-100 p-2 transition hover:scale-105 hover:shadow-lg'
           >
             <Icon name='instagram' className='h-4 w-4 text-background' />
           </a>
           <a
-            href='https://youtu.be/B7HWLWf2S9w'
+            href={LINKS.TIKTOK}
             className='transform rounded-lg bg-zinc-100 p-2 transition hover:scale-105 hover:shadow-lg'
           >
             <Icon name='tiktok' className='h-4 w-4 text-background' />
