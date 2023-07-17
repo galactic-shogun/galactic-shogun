@@ -31,13 +31,17 @@ const Intro = () => {
           <p className='font-serif text-sm text-tertiary-light md:max-w-sm'>
             Meet the game designer and learn how to play Galactic Shogun!
           </p>
-          <iframe
-            className='z-10 h-80 w-full max-w-5xl rounded-md shadow-md md:order-4 md:h-[27rem]'
-            src='https://www.youtube.com/embed/B7HWLWf2S9w'
-            title='YouTube video player'
-            allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowFullScreen
-          ></iframe>
+          {process.env.NODE_ENV === 'production' ? (
+            <iframe
+              className='z-10 h-80 w-full max-w-5xl rounded-md shadow-md md:order-4 md:h-[27rem]'
+              src='https://www.youtube.com/embed/B7HWLWf2S9w'
+              title='YouTube video player'
+              allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <div className='z-10 h-80 w-full max-w-5xl rounded-md bg-secondary-dark/50 shadow-md md:order-4 md:h-[27rem]'></div>
+          )}
           <a
             href='https://www.kickstarter.com/projects/peterluo/2043897814?ref=9jufr2&token=f66ffddc'
             target='_blank'
