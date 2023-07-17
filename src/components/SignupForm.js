@@ -1,13 +1,21 @@
 import React, { useId, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Icon from '../icons/Icon';
+import jsonp from 'jsonp';
 
-const sleep = (x = 2000) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, x);
-  });
+const MAILCHIMP_URL =
+  'https://gmail.us21.list-manage.com/subscribe/post-json?u=092e604a67e8c12c2e7c7c627&amp;id=69e25d6845&amp;f_id=00755fe1f0';
+
+const STATUS = {
+  IDLE: 'idle',
+  SUCCESS: 'success',
+  LOADING: 'loading',
+};
+
+const toQueryString = (params) => {
+  return Object.keys(params)
+    .map((key) => key + '=' + params[key])
+    .join('&');
 };
 
 const SignupForm = ({
@@ -17,8 +25,8 @@ const SignupForm = ({
   emailClass = '',
   firstNameClass = '',
 }) => {
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [status, setStatus] = useState(STATUS.IDLE);
+  const [error, setError] = useState(null);
   const checkBoxID = useId();
 
   const {
@@ -28,32 +36,37 @@ const SignupForm = ({
   } = useForm();
 
   const onSubmit = async (data) => {
-    setLoading(true);
-    setSuccess(false);
+    const params = toQueryString({
+      FNAME: data.firstName,
+      EMAIL: data.email,
+    });
 
-    await sleep();
+    setStatus(STATUS.LOADING);
 
-    setLoading(false);
-    setSuccess(true);
-
-    console.log(data);
+    jsonp(`${MAILCHIMP_URL}&${params}`, { param: 'c' }, (err, data) => {
+      if (err || data.result !== 'success') {
+        setStatus(STATUS.ERROR);
+        setError(err || data.msg);
+      } else {
+        setStatus(STATUS.SUCCESS);
+      }
+    });
   };
 
   const getButtonDisplay = () => {
-    if (loading) {
-      return (
-        <div className='flex justify-center gap-4'>
-          <Icon name='loading' className='h-6 w-6 animate-spin text-white' />
-          <span>Processing...</span>
-        </div>
-      );
+    switch (status) {
+      case STATUS.LOADING:
+        return (
+          <div className='flex justify-center gap-4'>
+            <Icon name='loading' className='h-6 w-6 animate-spin text-white' />
+            <span>Processing...</span>
+          </div>
+        );
+      case STATUS.SUCCESS:
+        return 'SUBSCRIBED';
+      default:
+        return buttonText;
     }
-
-    if (success) {
-      return 'SUBSCRIBED';
-    }
-
-    return buttonText;
   };
 
   return (
@@ -107,11 +120,12 @@ const SignupForm = ({
       </div>
       <button
         type='submit'
-        disabled={success}
+        disabled={status === STATUS.SUCCESS}
         className={`button mt-2 transform tracking-wide hover:scale-105 active:scale-100 ${buttonClass}`}
       >
         {getButtonDisplay()}
       </button>
+      {error && <p className='text-center text-sm text-red-500'>{error}</p>}
     </form>
   );
 };
