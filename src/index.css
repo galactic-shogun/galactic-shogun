@@ -57,6 +57,10 @@
     text-align: center;
   }
 
+  .input[aria-invalid='true'] {
+    @apply outline-none ring-2 ring-red-500 focus:ring-red-500;
+  }
+
   .section {
     padding: theme('spacing.14') theme('spacing.6');
   }
