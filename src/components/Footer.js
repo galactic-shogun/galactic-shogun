@@ -4,6 +4,7 @@ import Icon from '../icons/Icon';
 import ShogunIcon from '../icons/ShogunIcon';
 import Dango from '../images/Dango.png';
 import { LINKS } from '../utils/constants';
+import SignupForm from './SignupForm';
 
 const Footer = () => {
   return (
@@ -24,13 +25,11 @@ const Footer = () => {
               releases.
             </p>
           </div>
-          <div className='mt-8 flex flex-col gap-2'>
-            <input placeholder='First Name' className='input' />
-            <input placeholder='Email Address' className='input' />
-            <button className='button transform bg-secondary hover:scale-105 hover:bg-secondary-light active:bg-secondary-light'>
-              SUBSCRIBE
-            </button>
-          </div>
+          <SignupForm
+            className='mt-8'
+            buttonText='SUBSCRIBE'
+            buttonClass='bg-secondary hover:bg-secondary-light active:bg-secondary-light'
+          />
           <div className='mt-16 flex flex-col items-center gap-4 md:mt-8 md:items-start'>
             <div className='text-center font-serif text-sm text-zinc-100'>
               Presented by Dango Games Inc. 2023 ©

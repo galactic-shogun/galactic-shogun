@@ -1,10 +1,11 @@
 import { Canvas } from '@react-three/fiber';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import Logo from '../icons/Logo';
-import SpaceWarp from './SpaceWarp';
 import Icon from '../icons/Icon';
+import Logo from '../icons/Logo';
 import BoxCard from '../images/Box+Cards.png';
+import SignupForm from './SignupForm';
+import SpaceWarp from './SpaceWarp';
 
 const DISPLAY_DELAY = 1.5;
 
@@ -71,13 +72,7 @@ const Hero = () => {
                         for 4-8 players!
                       </p>
                     </div>
-                    <div className='flex flex-col gap-2 md:w-full md:max-w-md'>
-                      <input className='input' placeholder='First Name' />
-                      <input className='input' placeholder='Email Address' />
-                      <button className='button transform hover:scale-105'>
-                        GET NOTIFIED
-                      </button>
-                    </div>
+                    <SignupForm className='md:w-full md:max-w-md' />
                   </div>
                   <div className='hidden h-auto max-w-xl flex-1 object-contain md:block'>
                     <img
