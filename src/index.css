@@ -50,6 +50,12 @@
     box-shadow: theme('boxShadow.lg');
   }
 
+  .button:disabled {
+    background-color: theme('colors.primary.dark');
+    transform: none !important;
+    box-shadow: none;
+  }
+
   .input {
     color: theme('colors.black');
     border-radius: theme('borderRadius.md');
@@ -58,7 +64,7 @@
   }
 
   .input[aria-invalid='true'] {
-    @apply outline-none ring-2 ring-red-500 focus:ring-red-500;
+    @apply text-red-500 outline-none ring-2 ring-red-500 focus:ring-red-500;
   }
 
   .section {

@@ -1,5 +1,14 @@
-import React, { useId } from 'react';
+import React, { useId, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import Icon from '../icons/Icon';
+
+const sleep = (x = 2000) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, x);
+  });
+};
 
 const SignupForm = ({
   className = '',
@@ -8,6 +17,8 @@ const SignupForm = ({
   emailClass = '',
   firstNameClass = '',
 }) => {
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
   const checkBoxID = useId();
 
   const {
@@ -17,7 +28,32 @@ const SignupForm = ({
   } = useForm();
 
   const onSubmit = async (data) => {
+    setLoading(true);
+    setSuccess(false);
+
+    await sleep();
+
+    setLoading(false);
+    setSuccess(true);
+
     console.log(data);
+  };
+
+  const getButtonDisplay = () => {
+    if (loading) {
+      return (
+        <div className='flex justify-center gap-4'>
+          <Icon name='loading' className='h-6 w-6 animate-spin text-white' />
+          <span>Processing...</span>
+        </div>
+      );
+    }
+
+    if (success) {
+      return 'SUBSCRIBED';
+    }
+
+    return buttonText;
   };
 
   return (
@@ -43,17 +79,17 @@ const SignupForm = ({
         placeholder='Email Address'
         className={`input ${emailClass}`}
       />
-      <div className='flex items-center gap-2'>
+      <div className='flex items-start gap-2 md:items-center'>
         <input
           type='checkbox'
           {...register('privacyPolicy', { required: true })}
           aria-invalid={errors.privacyPolicy ? 'true' : 'false'}
-          className='input'
+          className='input mt-0.5 md:mt-0'
           id={`privacyPolicy-${checkBoxID}`}
         />
         <label
           htmlFor={`privacyPolicy-${checkBoxID}`}
-          className='font-serif text-sm'
+          className='font-serif text-sm leading-none'
         >
           I have read and agree to the website{' '}
           <span className='text-sky-500'>
@@ -69,11 +105,13 @@ const SignupForm = ({
           </span>
         </label>
       </div>
-      <input
+      <button
         type='submit'
-        value={buttonText}
-        className={`button transform hover:scale-105 ${buttonClass}`}
-      />
+        disabled={success}
+        className={`button mt-2 transform tracking-wide hover:scale-105 active:scale-100 ${buttonClass}`}
+      >
+        {getButtonDisplay()}
+      </button>
     </form>
   );
 };

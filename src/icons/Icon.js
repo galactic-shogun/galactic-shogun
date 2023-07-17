@@ -11,11 +11,14 @@ import SpaceIcon from './SpaceIcon';
 import TikTokIcon from './TikTokIcon';
 import ShogunIcon from './ShogunIcon';
 import Logo from './Logo';
+import LoadingIcon from './LoadingIcon';
 
 const Icon = ({ name, ...props }) => {
   switch (name) {
     case 'logo':
       return <Logo {...props} />;
+    case 'loading':
+      return <LoadingIcon {...props} />;
     case 'shogun':
       return <ShogunIcon {...props} />;
     case 'ninja':

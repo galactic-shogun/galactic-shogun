@@ -28,7 +28,7 @@ const Footer = () => {
           <SignupForm
             className='mt-8'
             buttonText='SUBSCRIBE'
-            buttonClass='bg-secondary hover:bg-secondary-light active:bg-secondary-light'
+            buttonClass='bg-secondary hover:bg-secondary-light active:bg-secondary-light disabled:bg-secondary-dark'
           />
           <div className='mt-16 flex flex-col items-center gap-4 md:mt-8 md:items-start'>
             <div className='text-center font-serif text-sm text-zinc-100'>
