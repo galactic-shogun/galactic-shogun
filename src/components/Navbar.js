@@ -34,7 +34,7 @@ const Navbar = ({ className = '' }) => {
         y: showNavbar ? 0 : -150,
       }}
       transition={{ duration: 0.4 }}
-      className={`fixed left-0 right-0 top-0 z-50 bg-background ${className}`}
+      className={`fixed left-0 right-0 top-0 z-50 bg-background shadow-xl shadow-secondary/10 ${className}`}
     >
       <div className='mx-auto flex max-w-screen-xl items-center justify-between px-6 py-4'>
         <div className='hidden justify-center gap-2 md:flex'>
