@@ -32,7 +32,7 @@ const Footer = () => {
           />
           <div className='mt-16 flex flex-col items-center gap-4 md:mt-8 md:items-start'>
             <div className='text-center font-serif text-sm text-zinc-100'>
-              Presented by Dango Games Inc. 2023 ©
+              Presented by Dango Games Inc. 2023 Test ©
             </div>
             <div className='flex justify-center gap-2'>
               <a
