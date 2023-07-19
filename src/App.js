@@ -6,10 +6,12 @@ import Hero from './components/Hero';
 import ImageSection from './components/ImageSection';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
+import MetaPixel from './components/MetaPixel';
 
 const App = () => {
   return (
     <>
+      <MetaPixel />
       <main>
         <Navbar />
         <Hero />
