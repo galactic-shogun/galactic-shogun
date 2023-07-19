@@ -8,7 +8,7 @@ import { BlendFunction } from 'postprocessing';
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-const COUNT = 300;
+const COUNT = 200;
 const XY_BOUNDS = 40;
 const Z_BOUNDS = 25;
 const MAX_SPEED_FACTOR = 10;

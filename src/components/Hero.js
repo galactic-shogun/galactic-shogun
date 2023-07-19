@@ -98,7 +98,7 @@ const Hero = () => {
             />
           </div>
           <div className='grid-parent absolute right-0 top-[-20%] hidden h-full w-1/2 md:block'>
-            <div className='grid-pattern grid-pattern-draw opacity-25'></div>
+            <div className='grid-pattern opacity-25'></div>
           </div>
         </motion.div>
       </div>
