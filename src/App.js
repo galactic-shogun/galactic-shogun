@@ -7,11 +7,13 @@ import ImageSection from './components/ImageSection';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
 import MetaPixel from './components/MetaPixel';
+import GoogleTagManager from './components/GoogleTagManager';
 
 const App = () => {
   return (
     <>
       <MetaPixel />
+      <GoogleTagManager />
       <main>
         <Navbar />
         <Hero />
