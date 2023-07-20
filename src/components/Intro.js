@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import MetalIcon from '../icons/MetalIcon';
+import { Intro as IntroConfig } from '../utils/config';
 
 const metalAnimation = {
   initial: {
@@ -25,16 +26,14 @@ const Intro = () => {
     >
       <div className='relative mx-auto max-w-screen-2xl'>
         <div className='align-center relative z-30 mx-auto flex flex-col items-center justify-center gap-6 overflow-visible text-center'>
-          <h2 className='section-title md:max-w-sm'>
-            What is Galactic Shogun?
-          </h2>
+          <h2 className='section-title md:max-w-sm'>{IntroConfig.Title}</h2>
           <p className='font-serif text-sm text-tertiary-light md:max-w-sm'>
-            Meet the game designer and learn how to play Galactic Shogun!
+            {IntroConfig.Description}
           </p>
           {process.env.NODE_ENV === 'production' ? (
             <iframe
               className='z-10 h-80 w-full max-w-5xl rounded-md shadow-md md:order-4 md:h-[27rem]'
-              src='https://www.youtube.com/embed/B7HWLWf2S9w'
+              src={IntroConfig.YoutubeEmbedLink}
               title='YouTube video player'
               allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen
@@ -43,12 +42,12 @@ const Intro = () => {
             <div className='z-10 h-80 w-full max-w-5xl rounded-md bg-secondary-dark/50 shadow-md md:order-4 md:h-[27rem]'></div>
           )}
           <a
-            href='https://www.kickstarter.com/projects/peterluo/2043897814?ref=9jufr2&token=f66ffddc'
+            href={IntroConfig.ButtonLink}
             target='_blank'
             rel='noreferrer'
             className='button z-30 w-full transform hover:scale-105 md:mb-6 md:max-w-sm'
           >
-            FIND US ON KICKSTARTER
+            {IntroConfig.ButtonText}
           </a>
         </div>
         <motion.div

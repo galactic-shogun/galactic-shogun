@@ -1,13 +1,14 @@
 import React from 'react';
 import BoxImage from '../images/Box.png';
 import Dango from '../images/Dango.png';
+import { About as AboutConfig } from '../utils/config';
 
 const About = () => {
   return (
     <section className='section bg-gray-950 bg-gradient-to-b from-background to-15%'>
       <div className='mx-auto flex max-w-screen-2xl flex-col items-center justify-center'>
         <div className='text-center'>
-          <h2 className='section-title'>Game Contents</h2>
+          <h2 className='section-title'>{AboutConfig.Title}</h2>
         </div>
         <div className='relative mt-44 md:mt-24 md:flex md:bg-transparent'>
           <img

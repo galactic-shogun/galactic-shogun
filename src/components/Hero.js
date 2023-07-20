@@ -6,6 +6,7 @@ import Logo from '../icons/Logo';
 import BoxCard from '../images/Box+Cards.png';
 import SignupForm from './SignupForm';
 import SpaceWarp from './SpaceWarp';
+import { Hero as HeroConfig } from '../utils/config';
 
 const DISPLAY_DELAY = 1.5;
 
@@ -62,17 +63,19 @@ const Hero = () => {
                   <div className='flex max-w-xl flex-col items-center gap-5 md:items-start'>
                     <div className='flex flex-col items-center gap-4 text-center md:items-start md:text-left'>
                       <h3 className='font-serif text-sm font-semibold md:text-xl'>
-                        KICKSTARTER LAUNCH FALL 2023
+                        {HeroConfig.Subtitle}
                       </h3>
                       <h2 className='section-title text-primary md:text-5xl'>
-                        Master the Cosmos with Galactic Shogun
+                        {HeroConfig.Title}
                       </h2>
                       <p className='font-serif text-sm md:text-xl'>
-                        A new fast-paced and dynamic social deduction board game
-                        for 4-8 players!
+                        {HeroConfig.Description}
                       </p>
                     </div>
-                    <SignupForm className='md:w-full md:max-w-md' />
+                    <SignupForm
+                      buttonText={HeroConfig.ButtonText}
+                      className='md:w-full md:max-w-md'
+                    />
                   </div>
                   <div className='hidden h-auto max-w-xl flex-1 object-contain md:block'>
                     <img

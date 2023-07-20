@@ -3,8 +3,9 @@ import { renderToString } from 'react-dom/server';
 import Icon from '../icons/Icon';
 import ShogunIcon from '../icons/ShogunIcon';
 import Dango from '../images/Dango.png';
-import { LINKS } from '../utils/constants';
+import { Links } from '../utils/config';
 import SignupForm from './SignupForm';
+import { Footer as FooterConfig } from '../utils/config';
 
 const Footer = () => {
   return (
@@ -19,15 +20,14 @@ const Footer = () => {
       >
         <div className='max-w-lg'>
           <div className='flex flex-col gap-6 text-center md:text-left'>
-            <h2 className='section-title'>Convinced?</h2>
+            <h2 className='section-title'>{FooterConfig.Title}</h2>
             <p className='font-serif text-sm md:max-w-md'>
-              Subscribe now to receive exclusive deals and early news about our
-              releases.
+              {FooterConfig.Description}
             </p>
           </div>
           <SignupForm
             className='mt-8'
-            buttonText='SUBSCRIBE'
+            buttonText={FooterConfig.ButtonText}
             buttonClass='bg-secondary hover:bg-secondary-light active:bg-secondary-light disabled:bg-secondary-dark'
           />
           <div className='mt-16 flex flex-col items-center gap-4 md:mt-8 md:items-start'>
@@ -36,19 +36,19 @@ const Footer = () => {
             </div>
             <div className='flex justify-center gap-2'>
               <a
-                href={LINKS.FACEBOOK}
+                href={Links.Facebook}
                 className='transform rounded-lg bg-zinc-100 p-3 transition hover:scale-105 hover:shadow-lg'
               >
                 <Icon name='facebook' className='h-5 w-5 text-primary' />
               </a>
               <a
-                href={LINKS.INSTAGRAM}
+                href={Links.Instagram}
                 className='transform rounded-lg bg-zinc-100 p-3 transition hover:scale-105 hover:shadow-lg'
               >
                 <Icon name='instagram' className='h-5 w-5 text-primary' />
               </a>
               <a
-                href={LINKS.TIKTOK}
+                href={Links.Tiktok}
                 className='transform rounded-lg bg-zinc-100 p-3 transition hover:scale-105 hover:shadow-lg'
               >
                 <Icon name='tiktok' className='h-5 w-5 text-primary' />
