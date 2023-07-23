@@ -62,7 +62,7 @@ const Navbar = ({ className = '' }) => {
           onClick={scrollToTop}
           className='button transform p-2 text-xs hover:scale-105'
         >
-          GET NOTIFIED
+          TOP
         </button>
       </div>
     </motion.nav>
