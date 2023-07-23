@@ -10,7 +10,7 @@ export const Hero = {
   Subtitle: 'KICKSTARTER LAUNCH FALL 2023',
   Description:
     'A new fast-paced and dynamic social deduction board game for 4-8 players!',
-  ButtonText: 'GET NOTIFIED',
+  ButtonText: 'SUBSCRIBE',
 };
 
 // src/components/Intro.js
@@ -59,6 +59,6 @@ export const About = {
 export const Footer = {
   Title: 'Convinced?',
   Description:
-    'Subscribe now to receive exclusive deals and early news about our releases',
+    'Subscribe now to receive exclusive deals and early news about our releases.',
   ButtonText: 'SUBSCRIBE',
 };
