@@ -10,13 +10,18 @@ const About = () => {
         <div className='text-center'>
           <h2 className='section-title'>{AboutConfig.Title}</h2>
         </div>
-        <div className='relative mt-44 md:mt-24 md:flex md:bg-transparent'>
-          <img
-            src={BoxImage}
-            alt='box'
-            className='absolute -top-full left-1/2 -translate-x-1/2 -translate-y-3.5 object-contain md:relative md:left-0 md:top-0 md:translate-x-0 md:translate-y-0'
-          />
-          <ul className='max-w-2xl rounded-lg bg-zinc-100 p-6 text-center font-serif text-gray-500 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-8 md:rounded-3xl md:px-8 md:py-10 md:text-left'>
+        <div className='mt-12 md:mt-16 md:flex md:items-center md:bg-transparent'>
+          <div className='-mb-8 md:flex-1'>
+            <img
+              src={BoxImage}
+              alt='box'
+              className='md:h-full md:w-full md:object-contain'
+            />
+          </div>
+          <ul className='max-w-2xl rounded-lg bg-zinc-100 p-6 text-center font-serif text-gray-500 md:mb-8 md:grid md:h-min md:flex-1 md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:rounded-3xl md:px-8 md:py-10 md:text-left'>
+            <li className='mb-1.5 text-xl font-semibold text-background md:hidden'>
+              What's in the Box?
+            </li>
             <li className='md:order-1 md:font-sans md:text-xl md:font-bold md:text-background'>
               1x Rule Sheet
               <ul className='mt-2 hidden list-inside list-disc font-serif text-base font-normal md:block'>
