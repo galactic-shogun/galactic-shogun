@@ -34,7 +34,7 @@ const Hero = () => {
         {process.env.NODE_ENV === 'production' && <SpaceWarp />}
       </Canvas>
       <div className='relative z-0 overflow-hidden'>
-        <section className='section relative z-10 flex h-screen bg-gradient-to-t from-background to-50% md:pb-0'>
+        <section className='section relative z-10 flex h-screen bg-gradient-to-t from-background to-50% md:px-12 md:pb-0'>
           <div
             className={`mx-auto flex h-full w-full max-w-screen-xl flex-col items-center justify-center gap-20 ${
               show && 'md:items-start'
@@ -58,7 +58,7 @@ const Hero = () => {
                   layout
                   animate={{ opacity: 100, y: 0 }}
                   initial={{ opacity: 0, y: 100 }}
-                  className='mb-auto flex w-full items-center justify-between'
+                  className='mb-auto flex w-full items-center justify-center md:justify-between'
                 >
                   <div className='flex max-w-xl flex-col items-center gap-5 md:items-start'>
                     <div className='flex flex-col items-center gap-4 text-center md:items-start md:text-left'>
