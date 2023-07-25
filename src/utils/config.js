@@ -18,10 +18,10 @@ export const Hero = {
 export const Intro = {
   Title: 'What is Galactic Shogun?',
   Description: 'Meet the game designer and learn how to play Galactic Shogun!',
-  YoutubeEmbedLink: 'https://www.youtube.com/embed/B7HWLWf2S9w',
+  YoutubeEmbedLink: 'https://www.youtube.com/embed/LLxQ30fRGOk',
   ButtonText: 'FIND US ON KICKSTARTER',
   ButtonLink:
-    'https://www.kickstarter.com/projects/peterluo/2043897814?ref=9jufr2&token=f66ffddc',
+    'https://www.kickstarter.com/projects/peterluo/galactic-shogun',
 };
 
 // src/components/Features.js
