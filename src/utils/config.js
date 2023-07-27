@@ -18,7 +18,7 @@ export const Hero = {
 export const Intro = {
   Title: 'What is Galactic Shogun?',
   Description: 'Meet the game designer and learn how to play Galactic Shogun!',
-  YoutubeEmbedLink: 'https://www.youtube.com/embed/LLxQ30fRGOk',
+  YoutubeEmbedLink: 'https://www.youtube.com/embed/XZTD_hvGYDE',
   ButtonText: 'FIND US ON KICKSTARTER',
   ButtonLink:
     'https://www.kickstarter.com/projects/peterluo/galactic-shogun',
