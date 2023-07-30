@@ -11,6 +11,7 @@ export const Hero = {
   Description:
     'A new fast-paced and dynamic social deduction board game for 4-8 players!',
   ButtonText: 'SUBSCRIBE',
+  ButtonSuccessText: 'SUBSCRIBED',
 };
 
 // src/components/Intro.js
@@ -61,4 +62,5 @@ export const Footer = {
   Description:
     'Subscribe now to receive exclusive deals and early news about our releases.',
   ButtonText: 'SUBSCRIBE',
+  ButtonSuccessText: 'SUBSCRIBED',
 };

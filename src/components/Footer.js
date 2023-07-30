@@ -28,6 +28,7 @@ const Footer = () => {
           <SignupForm
             className='mt-8'
             buttonText={FooterConfig.ButtonText}
+            buttonSuccessText={FooterConfig.ButtonSuccessText}
             buttonClass='bg-secondary hover:bg-secondary-light active:bg-secondary-light disabled:bg-secondary-dark'
           />
           <div className='mt-16 flex flex-col items-center gap-4 md:mt-8 md:items-start'>

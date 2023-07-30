@@ -21,6 +21,7 @@ const toQueryString = (params) => {
 const SignupForm = ({
   className = '',
   buttonText = 'GET NOTIFIED',
+  buttonSuccessText = 'SUBSCRIBED',
   buttonClass = '',
   emailClass = '',
   firstNameClass = '',
@@ -53,7 +54,7 @@ const SignupForm = ({
     });
   };
 
-  const getButtonDisplay = () => {
+  const getButtonDisplay = (status) => {
     switch (status) {
       case STATUS.LOADING:
         return (
@@ -63,7 +64,7 @@ const SignupForm = ({
           </div>
         );
       case STATUS.SUCCESS:
-        return 'SUBSCRIBED';
+        return buttonSuccessText;
       default:
         return buttonText;
     }
@@ -120,10 +121,9 @@ const SignupForm = ({
       </div>
       <button
         type='submit'
-        disabled={status === STATUS.SUCCESS}
         className={`button mt-2 transform tracking-wide hover:scale-105 active:scale-100 ${buttonClass}`}
       >
-        {getButtonDisplay()}
+        {getButtonDisplay(status)}
       </button>
       {error && <p className='text-center text-sm text-red-500'>{error}</p>}
     </form>

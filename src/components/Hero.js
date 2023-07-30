@@ -74,6 +74,7 @@ const Hero = () => {
                     </div>
                     <SignupForm
                       buttonText={HeroConfig.ButtonText}
+                      buttonSuccessText={HeroConfig.ButtonSuccessText}
                       className='md:w-full md:max-w-md'
                     />
                   </div>
