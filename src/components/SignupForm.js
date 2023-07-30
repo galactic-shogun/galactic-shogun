@@ -33,6 +33,7 @@ const SignupForm = ({
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -50,6 +51,7 @@ const SignupForm = ({
         setError(err || data.msg);
       } else {
         setStatus(STATUS.SUCCESS);
+        reset();
       }
     });
   };

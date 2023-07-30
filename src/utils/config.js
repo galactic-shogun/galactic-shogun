@@ -11,7 +11,7 @@ export const Hero = {
   Description:
     'A new fast-paced and dynamic social deduction board game for 4-8 players!',
   ButtonText: 'SUBSCRIBE',
-  ButtonSuccessText: 'SUBSCRIBED',
+  ButtonSuccessText: 'SUCCESS!',
 };
 
 // src/components/Intro.js
@@ -20,8 +20,7 @@ export const Intro = {
   Description: 'Meet the game designer and learn how to play Galactic Shogun!',
   YoutubeEmbedLink: 'https://www.youtube.com/embed/XZTD_hvGYDE',
   ButtonText: 'FIND US ON KICKSTARTER',
-  ButtonLink:
-    'https://www.kickstarter.com/projects/peterluo/galactic-shogun',
+  ButtonLink: 'https://www.kickstarter.com/projects/peterluo/galactic-shogun',
 };
 
 // src/components/Features.js
@@ -62,5 +61,5 @@ export const Footer = {
   Description:
     'Subscribe now to receive exclusive deals and early news about our releases.',
   ButtonText: 'SUBSCRIBE',
-  ButtonSuccessText: 'SUBSCRIBED',
+  ButtonSuccessText: 'SUCCESS!',
 };
