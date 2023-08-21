@@ -7,7 +7,7 @@ export const Links = {
 // src/components/Hero.js
 export const Hero = {
   Title: 'Master the Cosmos with Galactic Shogun',
-  Subtitle: 'KICKSTARTER LAUNCH FALL 2023',
+  Subtitle: 'KICKSTARTER LAUNCH SEPT 15, 2023',
   Description:
     'A new fast-paced and dynamic social deduction board game for 4-8 players!',
   ButtonText: 'SUBSCRIBE',
