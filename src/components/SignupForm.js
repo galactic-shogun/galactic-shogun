@@ -34,7 +34,7 @@ const SignupForm = ({
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isValid },
   } = useForm();
 
   const onSubmit = async (data) => {
@@ -124,6 +124,7 @@ const SignupForm = ({
       <button
         type='submit'
         className={`button mt-2 transform tracking-wide hover:scale-105 active:scale-100 ${buttonClass}`}
+        disabled={!isValid}
       >
         {getButtonDisplay(status)}
       </button>
