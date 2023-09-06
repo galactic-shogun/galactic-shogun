@@ -51,9 +51,10 @@
   }
 
   .button:disabled {
-    background-color: theme('colors.primary.dark');
     transform: none !important;
     box-shadow: none;
+    cursor: not-allowed;
+    @apply bg-pink-800 text-zinc-400;
   }
 
   .input {

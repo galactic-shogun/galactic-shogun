@@ -29,7 +29,7 @@ const Footer = () => {
             className='mt-8'
             buttonText={FooterConfig.ButtonText}
             buttonSuccessText={FooterConfig.ButtonSuccessText}
-            buttonClass='bg-secondary hover:bg-secondary-light active:bg-secondary-light disabled:bg-secondary-dark'
+            buttonClass='bg-secondary hover:bg-secondary-light active:bg-secondary-light disabled:bg-violet-800'
           />
           <div className='mt-16 flex flex-col items-center gap-4 md:mt-8 md:items-start'>
             <div className='text-center font-serif text-sm text-zinc-100'>
