@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfbade75.css",
-    "main.js": "/static/js/main.151e4f40.js",
+    "main.js": "/static/js/main.bc3d0338.js",
     "static/js/787.e8cac526.chunk.js": "/static/js/787.e8cac526.chunk.js",
     "static/media/Card Game 04 - Apr 07_Galactic Shogun.png": "/static/media/Card Game 04 - Apr 07_Galactic Shogun.42cc7ad5fd3f6450a1f2.png",
     "static/media/Card Game 04 - Apr 07_Ninja.png": "/static/media/Card Game 04 - Apr 07_Ninja.2f537684e688e828db37.png",
@@ -13,11 +13,11 @@
     "static/media/Dango.png": "/static/media/Dango.e6a6156226ce37415262.png",
     "index.html": "/index.html",
     "main.bfbade75.css.map": "/static/css/main.bfbade75.css.map",
-    "main.151e4f40.js.map": "/static/js/main.151e4f40.js.map",
+    "main.bc3d0338.js.map": "/static/js/main.bc3d0338.js.map",
     "787.e8cac526.chunk.js.map": "/static/js/787.e8cac526.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfbade75.css",
-    "static/js/main.151e4f40.js"
+    "static/js/main.bc3d0338.js"
   ]
 }
