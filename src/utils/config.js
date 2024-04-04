@@ -6,8 +6,8 @@ export const Links = {
 
 // src/components/Hero.js
 export const Hero = {
-  Title: 'Master the Cosmos with Galactic Shogun',
-  Subtitle: 'KICKSTARTER LAUNCH SEPT 15, 2023',
+  Title: 'The Best Social Deduction Game of 2024',
+  Subtitle: 'KICKSTARTER LAUNCH MAY 28, 2024',
   Description:
     'A new fast-paced and dynamic social deduction board game for 4-8 players!',
   ButtonText: 'SUBSCRIBE',
@@ -27,7 +27,7 @@ export const Intro = {
 export const Features = {
   Title: 'Social Deduction for Everyone',
   Description:
-    'Where honor, power, and strategy intersect. Are you ready to conquer the stars?',
+    'Tired of sitting around for 30 minutes after dying in a board game? Look no further.',
   Features: [
     {
       icon: 'samurai',
