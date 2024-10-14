@@ -6,8 +6,8 @@ export const Links = {
 
 // src/components/Hero.js
 export const Hero = {
-  Title: 'The Best Social Deduction Game of 2024',
-  Subtitle: 'KICKSTARTER LAUNCH MAY 28, 2024',
+  Title: 'Follow us for stock information below!',
+  Subtitle: 'KICKSTARTER FUNDED 140%',
   Description:
     'A new fast-paced and dynamic social deduction board game for 4-8 players!',
   ButtonText: 'SUBSCRIBE',
